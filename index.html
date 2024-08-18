@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meshmatrix.io</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+     
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+    * {
+        background-color: black;
+        color: white;
+    }
+    h1 {
+        font-size: small;
+        font-family: "Silkscreen", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    h2 {
+        
+    }
+     .first-div {
+        display: flex;
+        gap: 80px;
+        font-size:large ;
+        font-family: "Silkscreen", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        
+    }
+    .Logo {
+        height: 50px;
+        width: 50px;
+    }
+    
+    .mesh-div {
+        display: flex;
+        gap: 10px;
+    }
+    .sec-heading {
+        font-size: 4rem;
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        
+        
+    }
+    .sec-para {
+       
+        font-family: "Roboto", sans-serif;
+        font-weight: 250;
+        font-style: normal;
+        margin-top: -360px; 
+    }
+    .second-div {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        width: 125%;
+    }
+    .third-img {
+        height: 400px;
+        width: 700px;
+        margin-top: -130px;
+    }
+    .third-heading {
+        font-size: 4rem;
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        margin-top: -20px;
+    }
+    .third-div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .third-para {
+        margin-top: -45px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        
+    }
+    .wordf {
+        color: rgb(41, 41, 218);
+    }
+    #wordse {
+        color:  rgb(41, 41, 218);
+    }
+    .fourth-heading {
+        font-size: 4rem;
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+    }
+    .fourth-para {
+        font-family: "Roboto", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        margin-top: -135px;
+
+    }
+    .fourth-image {
+        height: 400px;
+    }
+    .fourth-div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        width: 120%;
+    }
+    span {
+        color:  rgb(41, 41, 218);
+    }
+    a {
+        text-decoration: none;
+    }
+    .imgfive {
+        height: 450px;
+    }
+    .fifth-heading {
+        font-size: 4rem;
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+    }
+    .fifth-div {
+        display: grid;
+        grid-template-columns:  1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .fifth-para {
+        font-weight: 200;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        margin-top: -40px;
+    }
+    .six-heading {
+        font-size: 4rem;
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+    }
+    .six-para {
+        font-weight: 200;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        margin-top: -30px;
+        
+    }
+
+    .six-div {
+     display: grid ;
+     grid-template-columns: 1fr 1fr 1fr;
+    }
+    #seventh-heading {
+        font-size: 3rem;
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        text-align: center;
+    }
+    ul {
+      list-style-type: none;
+   }
+   li {
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+   }
+    .eighth-div {
+        display: grid;
+        grid-template-columns:  1fr 1fr 1fr;
+    }
+    .Enterprise {
+        text-align: center;
+        border: 1px solid white;
+        border-radius: 30px;
+        margin-top: 30px;
+    }
+    .Basic {
+        text-align: center;
+        border: 1px solid white;
+        border-radius: 30px;
+        margin-top: 30px;
+        padding-bottom: 19px;
+    }
+    .Premium {
+        text-align: center;
+        border: 1px solid white;
+        border-radius: 30px;
+    }
+    .Basic-heading {
+        font-size: 2rem;
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+    }
+    .Premium-heading {
+        font-size: 2rem;
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+    }
+    .Premium-para {
+       font-size: 1.5rem; 
+    }
+    .Basic-para {
+       font-size: 1.5rem; 
+    }
+    .b-button {
+        width: 30%;
+        border-radius: 10px;
+        height: 30px;
+        background-color:  rgb(41, 41, 218);
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+
+    }
+    .p-button {
+        width: 30%;
+        border-radius: 10px;
+        background-color:  rgb(41, 41, 218);
+        height: 30px;
+        background-color:  rgb(41, 41, 218);
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        
+    
+    }
+    .e-button {
+        width: 30%;
+        border-radius: 10px;
+        background-color:  rgb(41, 41, 218);
+        height: 30px;
+        background-color:  rgb(41, 41, 218);
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .nine-heading {
+        font-size: 4rem;
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        text-align: center;
+    }
+
+    .sponsors {
+  margin-top: 70px;
+  margin-left: 70px;
+  display: flex;
+  gap: 110px;
+}
+
+    .techcrunch {
+        margin-top: -10px;
+  height: 60px;
+  width: 190px;
+}
+   .tnw {
+    margin-top: -10px;
+  height: 50px;
+  width: 90px;
+}
+   .mashable {
+  
+  height: 30px;
+  width: 176px;
+}
+  .bizinsider {
+    margin-top: -10px;
+    height: 50px;
+    width: 173px;
+  }
+  .tenth-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.2fr 1.2fr;
+  }
+  .footer-one {
+        
+        font-size:larger ;
+        font-family: "Silkscreen", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-bottom: 20px;
+  }
+  .footer-logo {
+    
+    height: 30px;
+    width: 30px;
+  }
+  h5 {
+    font-size:25px ;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+        
+  }
+  .col-three {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: large;
+  }
+  .col-two {
+    font-weight: bolder;
+    font-size: large;
+   
+  }
+  .col-one {
+    font-weight: bolder;
+    font-size: large;
+  }
+  
+  
+  
+    </style>
+</head>
+<body>
+    <div class="first-div">
+        
+       <div class="mesh-div"> <img class="Logo" src="./logo.png">
+        <p draggable="true" class="meshmatrix" >MeshMatrix</p>
+    </div>
+        <p draggable="true"><a href="./index.html" >Home</a></p>
+        <p draggable="true"><a href="./contact.html">Contact Us</a></p>
+        <p draggable="true"><a href="./solutions.html" >Solutions</a></p>
+        <p draggable="true"><a href="./signin.html">Sign In</a></p> 
+    </div>
+    
+    <br/>
+    <br/>
+    <br/>
+    <div class="second-div">
+    
+     <p draggable="true" class="sec-heading">"Unlocking the <span class="wordf">Power of Technology</span>  for All"</p>
+     <img class="second-image" src="./fimg.png">
+     <p draggable="true" class="sec-para"> We're not just building software – we're building a better tomorrow. Our team of talented developers is dedicated to crafting innovative solutions that make a real difference in people's lives. By harnessing the power of machine learning, natural language processing, and computer vision, AI is unlocking unprecedented levels of efficiency, accuracy, and innovation across industries. From automating mundane tasks and freeing up human capital for creative pursuits, to enabling personalized experiences and predictive insights that transform decision-making, AI is opening up new possibilities for growth, improvement, and progress.</p> 
+    </div>
+    <div class="third-div">
+        <img class="third-img" src="./third-imgg.png"/>
+    <div class="third-content">
+        <p class="third-heading">"<span id="wordse">Empowering</span> Tomorrow, Today."</p>
+        <p class="third-para">In a world where technology is advancing at an unprecedented pace, we believe that the future belongs to those who dare to dream big. At <span>MeshMatrix</span>, we're committed to empowering individuals, businesses, and communities to harness the power of technology and shape a brighter tomorrow. From AI and machine learning to blockchain and the Internet of Things, we're dedicated to developing innovative solutions that drive progress, improve lives, and create a better world for all.</p>
+    </div>
+    </div>
+    <div class="fourth-div">
+       <p draggable="true" class="fourth-heading">"Beyond the <span>Ordinary Experience</span> Now"</p>
+       <img class="fourth-image" src="./four-img.png"/>
+       <p class="fourth-para">Virtual reality (VR) is the ultimate immersive experience. By putting you at the center of the action, VR transports you beyond the screen and into a world of breathtaking realism. With stunning visuals, spatial audio, and intuitive controls, VR simulates the sights, sounds, and sensations of real life – and then takes it to the next level. By immersing ourselves in fully-realized digital environments, we can tap into new sources of creativity, inspiration, and innovation. With VR, the ordinary becomes extraordinary, and the impossible becomes possible.</p>
+    
+    </div>
+    <div class="fifth-div">
+        <img class="imgfive" src="./fifth-img.png"/>
+       <div class="fifth-content">
+        <p class="fifth-heading">"<span>Transform</span> Your Mind With Neurochips"</p>
+        <p class="fifth-para">BrainHy Neuro Chips is a groundbreaking innovation that has the potential to revolutionize the way we think, learn, and interact with the world around us. By harnessing the power of advanced neuroscience and AI technology, these neurochips can enhance our cognitive abilities, improve our memory, and even help us overcome mental health challenges. With BrainHy Neuro Chips, individuals can unlock their full potential, achieve greater mental clarity, and experience a profound transformation in their overall well-being. </p>
+       </div>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+
+    <div class="six-div">
+        <img src="./six-a.png"/>
+        <div class="six-content">
+        <p class="six-heading">Why <span>Us</span>?</p>
+        <p class="six-para">we're not just another company in the brain-computer interface (BCI) industry - we're the pioneers. Our team of expert neuroscientists, engineers, and researchers have dedicated years to developing the most advanced, cutting-edge neurochip technology that has the potential to transform lives. What sets us apart is our unwavering commitment to innovation, quality, and safety. </p>
+        </div>
+        <img src="./six-b.png"/>
+    </div>
+    <br/>
+    <p id="seventh-heading">Select a <span>Plan</span> that Empowers <span>Your Mind</span></p>
+   
+    <div class="eighth-div">
+      <div class="Basic">
+        <p class="Basic-heading">Basic plan</p>
+        <p class="Basic-para"> Free</p>
+        <ul>
+            <li>✔️ Limited access to our platform</li>
+            <li>✔️ 1 user</li>
+            <li>✔️ 100mb Space/website</li>
+            <li>✔️ Contionus deployment</li>
+            <li>❌ No priority support</li>
+        </ul>
+        <button class="b-button">Signup</button>
+      </div>
+      <div class="Premium">
+        <p class="Premium-heading">Premium</p>
+        <p class="Premium-para"> $12/month</p>
+        <ul>
+            <li>✔️ Unimited access to our platform</li>
+            <li>✔️ 10 user</li>
+            <li>✔️ 100GB Space/website</li>
+            <li>✔️ Contionus deployment</li>
+            <li>✔️ Email support</li>
+        </ul>
+        <button class="p-button">Buy now</button>
+      </div>
+
+      <div class="Enterprise">
+        <p class="Premium-heading">Custom Pricing</p>
+        <ul>
+            <li>✔️ Unimited access to our platform</li>
+            <li>✔️ Unimited user</li>
+            <li>✔️ Unimited Space/website</li>
+            <li>✔️ Contionus deployment</li>
+            <li>✔️ 24/7 Email support</li>
+        </ul>
+        <button class="e-button">Contact us</button>
+      </div>
+    </div>
+
+    <div class="nine-div">
+        <p class="nine-heading">Trusted <span>by</span></p>
+        <div class="sponsors">
+            <img class="techcrunch" src="./techcrunch.png"/>
+            <img class="mashable" src="./mashable.png"/>
+            <img class="bizinsider" src="./bizinsider.png"/>
+            <img class="tnw" src="./tnw.png"/>
+          </div>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <hr/>
+
+    <div class="tenth-div">
+            
+              <p class="footer-one"><img class="footer-logo"src="./logo.png"> MeshMatrix</p>
+
+            <div >
+              <h5>Certifications and Awards:   </h5>
+              <ul class="col-one">
+                <li>Industry certifications (e.g. ISO 27001) </li>
+                <br>
+                <li>Awards and recognition</li>
+                <br>
+                <li>Deloitte Technology Fast 500</li>
+                <br>
+                <li>Forbes Cloud 100</li>
+                
+              </ul>
+            </div>
+            <div>
+              <h5>Support and Resources </h5>
+              <ul class="col-two">
+                <li>Documentation</li>
+                <br>
+                <li>Knowledge base</li>
+                <br>
+                <li>Community forums </li>
+                <br>
+                <li>Support ticket system </li>
+            
+              </ul>
+            </div>
+            <div>
+              <h5>Legal and Compliance:
+            </h5>
+              <ul class="col-three">
+                <li>Terms of Service</li>
+                <br>
+                <li>Privacy Policy</li>
+                <br>
+                <li>Cookie Policy</li>
+                <br>
+                <li>GDPR Compliance</li>
+            
+              </ul>
+            </div>
+
+
+
+    </div>
+</body>
+
+
+</html>
